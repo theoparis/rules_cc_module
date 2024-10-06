@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-load("@rules_cc//cc:action_names.bzl", "CPP_LINK_EXECUTABLE_ACTION_NAME")
-load("@rules_cc//cc:toolchain_utils.bzl", "find_cpp_toolchain")
+load("@@rules_cc+//cc:action_names.bzl", "CPP_LINK_EXECUTABLE_ACTION_NAME")
+load("@@rules_cc+//cc:toolchain_utils.bzl", "find_cpp_toolchain")
 
 def get_linker_and_args(ctx, cc_toolchain, feature_configuration, rpaths, output_file):
     user_link_flags = ctx.fragments.cpp.linkopts

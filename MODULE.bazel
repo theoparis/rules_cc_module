@@ -1,1 +1,1 @@
-module(name = "cc_module", version = "0.0.1")
+module(name = "rules_cc", version = "0.0.1")
